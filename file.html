@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi-Lo Game</title>
+</head>
+<body>
+
+    <!-- Have user enter their name -->
+    <div class="enter-name">
+        <form id="form" onsubmit="inputName(event)">
+            <label for="">Enter Your Name</label>
+            <input type="text" name="myName" id="myName">
+            <button type="submit">Submit Name</button>
+        </form>
+        <p class="display-info"></p>
+    </div>
+
+    <!-- Hide this after the user enters the max number -->
+    <div class="max-num">
+        <form id="form" onsubmit="inputMaxNum(event)">
+            <label for="">Enter Max Number</label>
+            <input type="text" name="maxNum" id="maxNum">
+            <button type="submit">Submit Maximum Number</button>
+        </form>
+        <p class="display-max-num"></p>
+    </div>
+
+    <!-- Hide this after the user enters the max number -->
+    <div class="make-guess">
+        <form id="form" onsubmit="inputMaxNum(event)">
+            <label for="">Please make a guess:</label>
+            <input type="text" name="myInput" id="myInput">
+            <button onclick="inputGuess(event)">Make this Guess</button>
+        </form>
+        <p class="display-guess"></p>
+    </div>
+
+    <!-- Congratulations Message Box-->
+    <div class="congratulations-message">
+        <h1 class="display-won">Congratulations, You Guessed the Correct Number</h1>
+        <button type="submit" onClick="refreshPage()">Reset Hi-Lo Game</button>
+    </div>
+
+</body>
+
+<!-- Link to JS tag -->
+<script src="/script.js"></script>
+</html>
