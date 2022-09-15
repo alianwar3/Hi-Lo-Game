@@ -1,5 +1,3 @@
-const highestNumber = 9007199254740991;
-
 // Display div sections
 const enterNameDiv = document.querySelector('.enter-name');
 const enterMaxNumDiv = document.querySelector('.max-num');
@@ -20,8 +18,8 @@ enterGuess.style.display = "none";
 congratsMessage.style.display = "none";
 
 
-let nameInfo = ''
 // 1) Function to validate name inputs
+let nameInfo = ''
 const inputName = function(event) {
     event.preventDefault();
     nameInfo = document.getElementById("myName").value;
@@ -52,6 +50,7 @@ const inputName = function(event) {
 // 2) Function to take input of max num
 let randomNum = 0;
 let maxNum = 0;
+const highestNumber = 9007199254740991;
 const inputMaxNum = function(event) {
     event.preventDefault();
     let maxNumInput = document.getElementById("maxNum").value;
